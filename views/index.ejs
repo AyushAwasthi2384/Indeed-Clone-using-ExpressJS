@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="./css/bootstrap.css"> <!-- Importing Bootstrap CSS -->
+    <script src="./js/bootstrap.bundle.min.js"></script> <!-- Importing Bootstrap JS -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/indeed-favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+    </style>
+
+    <script src="https://kit.fontawesome.com/e9d5fb96da.js" crossorigin="anonymous"></script>
+    <title>Job Search India | Indeed</title>
+</head>
+
+<body style="font-family:'Noto Sans', Verdana, Geneva, Tahoma, sans-serif; ">
+
+    <nav class="navbar navbar-expand-sm bg-white navbar-light nav-main">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav-ul">
+                <!-- LEFT -->
+                <img class="nav-logo" src="./assets/indeed-logo.png" alt="">
+                <img src="./assets/ukrain-support.png" alt="" style="width: 50px; margin-left: 20px; margin-top: 10px;">
+                <li class="nav-item" style="margin-left: 20px;">
+                    <a class="nav-link text-dark" href="#" id="find-job-link">Find job</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Company reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Salary Guide</a>
+                </li>
+                <!-- RIGHT -->
+                <li class="nav-item" style="margin-left: 40vw;">
+                    <a class="nav-link text-dark" href="#">Post your resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: rgb(0, 0, 162);"><strong>Sign in</strong></a>
+                </li>
+                <li class="nav-item" id="disabled-li">
+                    <a class="nav-link disabled" href="#">|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Employers/Post Job</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container main-section">
+        <form>
+            <div class="row mt-5" style="margin: 10px 100px;">
+                <div class="input-group col input-div">
+                    <span class="input-group-text text-dark bg-white input-span"><strong
+                            style="color: rgb(0, 0, 162);">What</strong></span>
+                    <input id="input-sec1" type="text/search" class="form-control input-sec"
+                        style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"
+                        placeholder="Job title, keywords, or company" required>
+                    <span class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border-0 ms-n5"
+                            type="button">
+                            <i class="fa fa-search" style="border: non;"></i>
+                        </button>
+                    </span>
+                </div>
+                <div class="input-group col input-div">
+                    <span class="input-group-text text-dark bg-white input-span"><strong
+                            style="color: rgb(0, 0, 162);">Where</strong></span>
+                    <input id="input-sec2" type="text/search" class="form-control input-sec"
+                        style="border-top-right-radius: 10px; border-bottom-right-radius: 10px;"
+                        placeholder="City, state or Pin code" required>
+                    <span class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border-0 ms-n5"
+                            type="button">
+                            <i class="fa fa-location" style="border: non;"></i>
+                        </button>
+                    </span>
+                </div>
+                <div class="input-group p-3" style="width: 100%; justify-content: center;">
+                    <button id="submit-btn" type="submit" class="btn btn-primary" value="submit"
+                        style="font-size: 0.9rem; background-color: rgb(0,0,162); border-radius: 8px;">Find Job</button>
+                </div>
+
+            </div>
+        </form>
+        <div class="row p-2">
+            <div class="col" style="display: flex; justify-content: center;">
+                <span class="post-res-ser">Post your resume</span>
+                <span style="margin-left: 6px;">- It only takes a few seconds</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid"
+        style="border-top: 0.1px solid rgb(206, 206, 206); height: 8vh; display: flex; flex-direction: column; align-items: center;">
+        <strong>No recent searches yet</strong>
+        <span
+            style="width: 17vw; text-align: center; font-size: 0.9rem; color: rgb(132, 121, 121); font-weight: 100;">After
+            you run a search, your recent searches will live here.</span>
+        <button id="mid-button-search" class="btn btn-outline-primary"
+            style="margin-top: 10px; font-size: 0.9rem; padding: 8px 40px; color: rgb(0, 0, 162); border-color: rgb(199, 199, 205); border-radius: 10px;"><strong>Start
+                a search</strong></button>
+    </div>
+    <div class="main-footer container-fluid p-3" style="position: absolute;">
+        <div class="">
+            <a class="footer-link text-dark" href="#">Career Advice</a>
+            <a class="footer-link text-dark" href="#">Browse Jobs</a>
+            <a class="footer-link text-dark" href="#">Browse Companies</a>
+            <a class="footer-link text-dark" href="#">Salaries</a>
+            <a class="footer-link text-dark" href="#">Indeed Events</a>
+            <a class="footer-link text-dark" href="#">Work at Indeed</a>
+            <a class="footer-link text-dark" href="#">Countries</a>
+            <a class="footer-link text-dark" href="#">About</a>
+            <a class="footer-link text-dark" href="#">Help Centre</a>
+            <a class="footer-link text-dark" href="#">ESG at Indeed</a> <br>
+            <a class="footer-link text-dark" href="#">Guidelines for safe job search</a>
+            <a class="footer-link text-dark" href="#">Post a job</a>
+        </div>
+        <div class="mt-4">
+            <a class="footer-link text-dark" href="#">&copy;2023 Indeed</a>
+            <a class="footer-link text-dark" href="#">Accessibility at Indeed</a>
+            <a class="footer-link text-dark" href="#">Privacy Centre</a>
+            <a class="footer-link text-dark" href="#">Cookies</a>
+            <a class="footer-link text-dark" href="#">Privacy</a>
+            <a class="footer-link text-dark" href="#">Terms</a>
+        </div>
+        <div class="footer-bottom"
+            style="display: flex; flex-direction: column; align-items: center; width: 100vw; margin-left: -16px; position: absolute; bottom: 0;padding: 10px 100px; background-color: rgb(245, 245, 240);">
+            <span style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;"><strong>Let employers find
+                    you</strong></span>
+            <button class="btn btn-primary" style="border-radius: 8px; background-color: rgb(0, 0, 162);"><strong>Upload
+                    Your Resume</strong></button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    
+</body>
+
+</html>
